@@ -22,15 +22,15 @@ async def say_hello(message: types.Message):
 
 @dp.callback_query_handler(text="but_arms")
 async def send_for_arms(call: types.CallbackQuery):
-    await call.message.answer("Упражнения для рук")
+    await call.message.answer("Упражнения для рук:")
 
 @dp.callback_query_handler(text="but_legs")
 async def send_for_arms(call: types.CallbackQuery):
-    await call.message.answer("Упражнения для ног")
+    await call.message.answer("Упражнения для ног:")
 
 @dp.callback_query_handler(text="but_back")
 async def send_for_arms(call: types.CallbackQuery):
-    await call.message.answer("Упражнения для спины")
+    await call.message.answer("Упражнения для спины:")
 
 
 if __name__ == '__main__':
