@@ -30,7 +30,7 @@ async def send_for_arms(call: types.CallbackQuery):
 
 @dp.callback_query_handler(text="but_back")
 async def send_for_arms(call: types.CallbackQuery):
-    await call.message.answer("упражнения для спины")
+    await call.message.answer("Упражнения для спины")
 
 
 if __name__ == '__main__':
